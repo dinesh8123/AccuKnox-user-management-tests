@@ -25,6 +25,6 @@ pip install playwright
 playwright install
 
 #How to run
-cd Automation
-python automation.py
+- cd Automation
+- python automation.py
 
