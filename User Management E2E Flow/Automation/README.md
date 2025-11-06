@@ -8,11 +8,11 @@ This script handles the full user lifecycle: **Create → Search → Edit → Ve
 
 ## 📦 Project Setup
 
-1. **Clone the repository**
-```bash
-git clone 
+mkdir Automation
 cd Automation
-
+touch automation.py
+#** past the script and save it ** 
+ 
 #Create a Virtual Enviroment (Recomended)
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
