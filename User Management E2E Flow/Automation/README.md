@@ -11,7 +11,8 @@ This script handles the full user lifecycle: **Create → Search → Edit → Ve
 1. **Clone the repository**
 ```bash
 git clone 
-cd <your-repo-directory>
+cd Automation
+
 #Create a Virtual Enviroment (Recomended)
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
