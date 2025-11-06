@@ -1,11 +1,11 @@
 #!/bin/bash
 # =====================================================
-# Automated Backup Script
+# Automated Backup Script (Using SCP)
 # Author: Dinesh Patel
 # Date: 2025-11-06
 # Description:
 #   Automates the backup of a specified local directory
-#   to a remote server or cloud destination using rsync.
+#   to a remote server or cloud destination using SCP.
 #   Generates a report on success or failure.
 # =====================================================
 
@@ -15,7 +15,7 @@ LOG_FILE="backup_report_${TIMESTAMP}.log"
 
 # --------- USER INPUT ---------
 echo "=============================="
-echo "🧠 Automated Backup Solution"
+echo "🧠 Automated Backup Solution (SCP Version)"
 echo "=============================="
 echo
 
@@ -37,15 +37,15 @@ fi
 
 # --------- BACKUP PROCESS ---------
 echo "🚀 Starting backup at $(date)" | tee -a "$LOG_FILE"
-echo "Source: $SOURCE_DIR" | tee -a "$LOG_FILE"
+echo "Source Directory: $SOURCE_DIR" | tee -a "$LOG_FILE"
 echo "Destination: $REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR" | tee -a "$LOG_FILE"
 echo "----------------------------------------------" | tee -a "$LOG_FILE"
 
-# Use rsync for efficient transfer
-rsync -avz --delete "$SOURCE_DIR" "$REMOTE_USER@$REMOTE_HOST:$REMOTE_DIR" >>"$LOG_FILE" 2>&1
+# Perform SCP backup
+scp -r -v "$SOURCE_DIR" "${REMOTE_USER}@${REMOTE_HOST}:${REMOTE_DIR}" >>"$LOG_FILE" 2>&1
 
 # --------- CHECK STATUS ---------
-if [[ $? -eq 0 ]]; then
+if [[ ${PIPESTATUS[0]} -eq 0 ]]; then
     echo "✅ Backup completed successfully at $(date)" | tee -a "$LOG_FILE"
 else
     echo "❌ Backup failed at $(date)" | tee -a "$LOG_FILE"
