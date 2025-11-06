@@ -6,14 +6,6 @@ This script handles the full user lifecycle: **Create → Search → Edit → Ve
 ---
 
 ## 📦 Project Setup
-
-### Create Project Directory
-```bash
-mkdir Automation
-cd Automation
-touch automation.py
-# Paste your Python automation script into automation.py and save it
-
  
 #Create a Virtual Enviroment (Recomended)
 # Linux / Mac
@@ -33,5 +25,6 @@ pip install playwright
 playwright install
 
 #How to run
+cd Automation
 python automation.py
 
