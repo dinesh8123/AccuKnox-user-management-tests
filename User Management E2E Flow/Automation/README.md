@@ -7,7 +7,7 @@ This script handles the full user lifecycle: **Create → Search → Edit → Ve
 
 ## 📦 Project Setup
 
-### 1. Create Project Directory
+### Create Project Directory
 ```bash
 mkdir Automation
 cd Automation
