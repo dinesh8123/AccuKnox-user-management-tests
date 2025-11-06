@@ -9,12 +9,12 @@ This script handles the full user lifecycle: **Create → Search → Edit → Ve
  
 #Create a Virtual Enviroment (Recomended)
 # Linux / Mac
-python -m venv venv
-source venv/bin/activate
+- python -m venv venv
+- source venv/bin/activate
 
 # Windows
-python -m venv venv
-venv\Scripts\activate
+- python -m venv venv
+- venv\Scripts\activate
 
 
 #Playwright version 1.43.0 OR later
