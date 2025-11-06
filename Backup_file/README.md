@@ -29,7 +29,7 @@ It uses `rsync` for fast and secure synchronization and generates a **backup rep
 
 ### 1️⃣ Clone this Repository
 ```bash
-git clone https://github.com/dinesh8123/automated_backup_solution.git
-cd automated-backup-solution
+git clone https://github.com/dinesh8123/Backup_file.git
+cd Backup_file
 chmod +x backup_script.sh
 ./backup_script.sh OR bash backup_script.sh
