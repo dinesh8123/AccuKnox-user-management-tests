@@ -29,6 +29,6 @@ This tool provides insights such as:
 ---
 
 ## 🧰 Usage
-- cd log-file-analyzer
+- cd log_file_analyzer
 - chmod +x log_file_analyzer.sh
 - ./log_file_analyzer.sh OR bash log_file_analyzer.sh
