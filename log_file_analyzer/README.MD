@@ -32,7 +32,7 @@ This tool provides insights such as:
 
 1. Clone or download this repository:
    ```bash
-   git clone https://github.com/yourusername/log-file-analyzer.git
+   git clone https://github.com/dinesh8123/log-file-analyzer.git
    cd log-file-analyzer
    chmod +x log_file_analyzer.sh
    ./log_file_analyzer.sh OR bash log_file_analyzer.sh
