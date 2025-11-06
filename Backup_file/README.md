@@ -26,10 +26,6 @@ It uses `rsync` for fast and secure synchronization and generates a **backup rep
 ---
 
 ## 🧩 Usage
-
-### 1️⃣ Clone this Repository
-```bash
-git clone https://github.com/dinesh8123/AccuKnox-user-management-tests/Backup_file.git
 cd Backup_file
 chmod +x backup_script.sh
 ./backup_script.sh OR bash backup_script.sh
