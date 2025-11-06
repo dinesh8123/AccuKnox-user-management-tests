@@ -9,8 +9,6 @@
 # =====================================================
 
 # ---------- CONFIGURATION ----------
-LOG_FILE=$1
-REPORT_FILE="log_analysis_report_$(date +%Y%m%d_%H%M%S).txt"
 TOP_COUNT=5
 
 # ---------- FUNCTIONS ----------
@@ -19,7 +17,6 @@ TOP_COUNT=5
 check_log_file() {
     if [[ -z "$LOG_FILE" ]]; then
         echo "❌ Error: No log file specified."
-        echo "Usage: $0 /path/to/access.log"
         exit 1
     elif [[ ! -f "$LOG_FILE" ]]; then
         echo "❌ Error: Log file '$LOG_FILE' not found!"
@@ -53,6 +50,7 @@ top_ips() {
 
 # Function to generate report
 generate_report() {
+    REPORT_FILE="log_analysis_report_$(date +%Y%m%d_%H%M%S).txt"
     {
         echo "=============================================="
         echo "🧾 Web Server Log Analysis Report"
@@ -70,6 +68,10 @@ generate_report() {
 }
 
 # ---------- MAIN EXECUTION ----------
+
+# Ask user for log file path at runtime
+read -p "Enter the full path of the web server log file: " LOG_FILE
 check_log_file
 generate_report
+
 exit 0
