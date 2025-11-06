@@ -26,6 +26,6 @@ It uses `rsync` for fast and secure synchronization and generates a **backup rep
 ---
 
 ## 🧩 Usage
-cd Backup_file
-chmod +x backup_script.sh
-./backup_script.sh OR bash backup_script.sh
+- cd Backup_file
+- chmod +x backup_script.sh
+- ./backup_script.sh OR bash backup_script.sh
