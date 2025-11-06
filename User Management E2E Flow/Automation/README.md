@@ -1,22 +1,29 @@
-"""
 # 🟢 OrangeHRM User Automation
 
-Automates **user management tasks** in [OrangeHRM demo](https://opensource-demo.orangehrmlive.com/) using **Playwright**.  
+Automates **user management tasks** in the [OrangeHRM demo](https://opensource-demo.orangehrmlive.com/) using **Playwright**.  
 This script handles the full user lifecycle: **Create → Search → Edit → Verify → Delete → Verify**.
 
 ---
 
 ## 📦 Project Setup
 
+### 1. Create Project Directory
+```bash
 mkdir Automation
 cd Automation
 touch automation.py
-#** past the script and save it ** 
+# Paste your Python automation script into automation.py and save it
+
  
 #Create a Virtual Enviroment (Recomended)
+# Linux / Mac
 python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
+source venv/bin/activate
+
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
 
 #Playwright version 1.43.0 OR later
 #Install the requied packages
